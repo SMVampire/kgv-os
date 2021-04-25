@@ -2,8 +2,8 @@
 local cursorX = 0.5
 local cursorY = 0.5
 -- RequestStreamedTextureDict("kgvgame") -- TODO: fix.
-RequestStreamedTextureDict( "commonmenu" )
-RequestStreamedTextureDict( "desktop_pc" )
+RequestStreamedTextureDict("commonmenu")
+RequestStreamedTextureDict("desktop_pc")
 rt = RequestScaleformMovie("web_browser")
 local startMenuUp = false
 local tick = 0
@@ -390,6 +390,6 @@ Citizen.CreateThread(function()
 		ProcessDesktop()
 		SetTextRenderId(GetDefaultScriptRendertargetRenderId())
 		tick = tick+1
-		Citizen.Wait(0)
+		Wait(0)
 	end
-end)
+end)end)
