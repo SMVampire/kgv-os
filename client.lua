@@ -21,7 +21,7 @@ local tick = 0
 	[x] Windows. Yes.
 	[x] Handle input
 	[x] Proper way to enter the monitor
-	[ ] Fix resolution or move to another render target
+	[x] Fix resolution or move to another render target (doubled res)
 	[ ] Better icon/window dragging
 	[x] Some fancy program like a browser
 	[ ] Games.
@@ -30,7 +30,7 @@ local tick = 0
     New Tasks & Fixes:
     [ ] Dragging Icons Merge Together - Bug
     [ ] Cannot Type Into Browser (SendDuiMessage?)
-    [ ] Clean Up OS Layout
+    [x] Clean Up OS Layout
     [ ] Create File Browser
 
 ]]
