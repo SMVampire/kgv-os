@@ -4,7 +4,7 @@ local cursorY = 0.5
 -- RequestStreamedTextureDict("kgvgame") -- TODO: fix.
 RequestStreamedTextureDict("commonmenu")
 RequestStreamedTextureDict("desktop_pc")
-rt = RequestScaleformMovie("web_browser")
+--rt = RequestScaleformMovie("web_browser")
 local startMenuUp = false
 local tick = 0
 
@@ -169,6 +169,43 @@ windows = {
 		open = false,
 	},
 }
+
+--[[
+	Potentially Valid Icons:
+	(could also stream desktop_pc.ytd with custom icons i'd assume)
+
+	desktop_pc:
+	- arrow (mouse pointer)
+	- bin (trash can)
+	- folder
+	- hand (middle finger icon)
+	- icon_antivirus
+	- icon_my_computer
+	- printer
+	- usb
+
+	fib_pc:
+	- arrow
+	- hand
+	- icon_antivirus
+	- icon_my_computer
+
+	hacking_pc:
+	- arrow
+	- bruteforce
+	- downandout
+	- globe2
+	- hackconnect
+	- hackingdevice
+	- hand
+	- harddrive
+	- network
+
+	sub_pc:
+	- arrow
+	- hand
+
+--]]
 
 dekstopIcons = {
 	myComputer = {
