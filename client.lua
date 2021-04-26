@@ -87,15 +87,15 @@ windows = {
 	},
 
 	browser = {
-		position = vector2(0.5, 0.5),
-		size = vector2(0.7, 0.6),
+		position = vector2(0.55, 0.45),
+		size = vector2(0.7, 0.61), -- 0.6
 		link = "http://fivem.net/",
 		initialized = false,
 		content = {
 			browserBar = function(posX, posY)
 				DrawRect(posX, posY-(0.6/2)+(0.06), 0.7, 0.04, 50, 50, 50, 150)
 				if windows.browser.initialized == false then
-					webX, webY = 800, 400
+					webX, webY = 960, 540 -- 800, 400
 					if not duiObj and not txd then
 						txd = CreateRuntimeTxd('os_browser')
 						duiObj = CreateDui(windows.browser.link, webX, webY)
@@ -111,7 +111,7 @@ windows = {
 			browserLink = function(posX, posY)
 				SetTextFont(0)
 				SetTextProportional(1)
-				SetTextScale(0.0, 0.15)
+				SetTextScale(0.0, 0.30)
 				SetTextColour(255, 255, 255, 255)
 				SetTextDropshadow(0, 0, 0, 0, 255)
 				SetTextEdge(2, 0, 0, 0, 150)
@@ -120,7 +120,7 @@ windows = {
 				SetTextEntry("STRING")
 				SetTextCentre(0)
 				AddTextComponentString(windows.browser.link)
-				DrawText(posX-0.3, posY-0.27)
+				DrawText(posX-0.32, posY-0.255)
 			end,
 			browser = function(posX, posY)
 				if duiObj and txd then
@@ -219,7 +219,7 @@ function ProcessDesktop()
 
 	SetTextFont(0)
 	SetTextProportional(1)
-	SetTextScale(0.0, 0.225)
+	SetTextScale(0.0, 0.5) -- 0.225
 	SetTextColour(255, 255, 255, 255)
 	SetTextDropshadow(0, 0, 0, 0, 255)
 	SetTextEdge(2, 0, 0, 0, 150)
@@ -228,7 +228,7 @@ function ProcessDesktop()
 	SetTextEntry("STRING")
 	SetTextCentre(0)
 	AddTextComponentString("~r~cw~w~OS")
-	DrawText(0.01, 0.935)
+	DrawText(0.02, 0.95)
 
 	if cursorX < 0.1 and cursorY > 1.0-0.05 then
 		DrawRect(0.0, 1.0, 0.2, 0.1, 100, 100, 255, 100)
@@ -311,7 +311,7 @@ function ProcessDesktop()
 		-- local r,g,b = 255,255,255
 		SetTextFont(0)
 		SetTextProportional(1)
-		SetTextScale(0.0, 0.15)
+		SetTextScale(0.0, 0.25)
 		SetTextColour(r, g, b, 255)
 		SetTextDropshadow(0, 0, 0, 0, 255)
 		SetTextEdge(2, 0, 0, 0, 150)
@@ -320,7 +320,7 @@ function ProcessDesktop()
 		SetTextEntry("STRING")
 		SetTextCentre(1)
 		AddTextComponentString(v.name)
-		DrawText(ix, iy+0.04)
+		DrawText(ix, iy+0.05)
 	end
 
 	if startMenuUp == true then
