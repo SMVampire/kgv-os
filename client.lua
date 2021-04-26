@@ -8,11 +8,11 @@ rt = RequestScaleformMovie("web_browser")
 local startMenuUp = false
 local tick = 0
 
-function translateAngle(x1, y1, ang, offset)
-  x1 = x1 + math.sin(ang) * offset
-  y1 = y1 + math.cos(ang) * offset
-  return {x1, y1}
-end
+-- function translateAngle(x1, y1, ang, offset) -- Unused?
+--   x1 = x1 + math.sin(ang) * offset
+--   y1 = y1 + math.cos(ang) * offset
+--   return {x1, y1}
+-- end
 
 --[[
 
@@ -26,6 +26,12 @@ end
 	[x] Some fancy program like a browser
 	[ ] Games.
 	[?] Basic sync across clients?
+
+    New Tasks & Fixes:
+    [ ] Dragging Icons Merge Together - Bug
+    [ ] Cannot Type Into Browser (SendDuiMessage?)
+    [ ] Clean Up OS Layout
+    [ ] Create File Browser
 
 ]]
 
